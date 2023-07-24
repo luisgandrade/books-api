@@ -1,5 +1,6 @@
 ﻿using BooksAPI.DataLayer.Abstractions.Repositories;
 using BooksAPI.Model.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,11 @@ namespace BooksAPI.DataLayer.EF.Repositories
         public async Task<Book?> Get(int id)
         {
             return await _context.Books.FindAsync(id);
+        }
+
+        public async Task<IList<Book>> GetAll()
+        {
+            return await _context.Books.ToListAsync();
         }
 
         public Task Update(Book book)

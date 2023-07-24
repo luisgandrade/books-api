@@ -9,10 +9,11 @@ namespace BooksAPI.DataLayer.Abstractions.Repositories
 {
     public interface IBookRepository
     {
-        Task Add(Book book);
-        Task<Book?> Get(int id);
+        Task Add(Book book);        
         Task Update(Book book);
         Task Delete(int id);
+        Task<Book?> Get(int id);
+        Task<IList<Book>> GetAll();
 
     }
 }
