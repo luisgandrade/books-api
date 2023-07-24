@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksAPI.Services", "BooksAPI.Services\BooksAPI.Services.csproj", "{647A7050-11F8-4DE7-89AF-512ED6B1D47C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksAPI.Services.Tests", "BooksAPI.Services.Tests\BooksAPI.Services.Tests.csproj", "{BA85BEA3-E5D0-414D-80D1-1B6DFFAE9604}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{647A7050-11F8-4DE7-89AF-512ED6B1D47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{647A7050-11F8-4DE7-89AF-512ED6B1D47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{647A7050-11F8-4DE7-89AF-512ED6B1D47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA85BEA3-E5D0-414D-80D1-1B6DFFAE9604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA85BEA3-E5D0-414D-80D1-1B6DFFAE9604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA85BEA3-E5D0-414D-80D1-1B6DFFAE9604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA85BEA3-E5D0-414D-80D1-1B6DFFAE9604}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

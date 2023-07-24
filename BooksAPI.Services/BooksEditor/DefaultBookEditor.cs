@@ -53,8 +53,8 @@ namespace BooksAPI.Services.BooksEditor
             }
             else
             {
-                bookEntity.Title = bookDTO.title;
-                bookEntity.Author = bookDTO.author;
+                bookEntity.Title = bookDTO.title ?? string.Empty;
+                bookEntity.Author = bookDTO.author ?? string.Empty;
                 bookEntity.PublishYear = bookDTO.publishYear ?? 0;                
             }
 
