@@ -49,7 +49,7 @@ namespace BooksAPI.Controllers
         public async Task<IActionResult> Post([FromBody][Required] AddBookDTO dto)
         {
             var bookCreated = await _bookEditor.AddBook(dto);
-            return CreatedAtAction(nameof(Get), new { id = bookCreated.Id });
+            return CreatedAtAction(nameof(Get), new { id = bookCreated.Id }, bookCreated);
         }
 
         // PUT api/<BooksController>/5
