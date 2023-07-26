@@ -18,9 +18,9 @@ services:
       context: .
     restart: always
     environment:
-      - ConnectionStrings__Postgres="User ID=postgres;Password=${POSTGRES_PASSWORD};Host=postgres;Port=5432;Database=books;"
+      - ConnectionStrings__Postgres=User Id=postgres;Password=${POSTGRES_PASSWORD};Server=postgres;Port=5432;Database=books;
     ports:
-      - "8080:8080"
+      - "8080:80"
     depends_on:
       - postgres
 
